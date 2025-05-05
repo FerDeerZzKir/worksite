@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reset password - Hikvision / Dahua</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #0b0b0c, #1f1743);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      animation: fadeInBody 1s ease-in-out;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    header, .section, .partners, footer {
+      width: 100%;
+      max-width: 480px;
+      animation: fadeUp 1s ease-in-out;
+    }
+
+    @media (min-width: 768px) {
+      header, .section, .partners, footer {
+        max-width: 768px;
+      }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, .section h2 {
+      animation: glowText 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowText {
+      0%   { text-shadow: 0 0 5px #7c32ff; }
+      100% { text-shadow: 0 0 15px #b236c8; }
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin: 20px 0 10px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #ccc;
+      animation: fadeInText 1.5s ease-in-out;
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .btn {
+      background: linear-gradient(90deg, #7c32ff, #b236c8);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin: 20px 0;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #9e3dff, #ca4dd9);
+      box-shadow: 0 0 10px #9e3dff;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 30px;
+      box-shadow: 0 0 20px rgba(124, 50, 255, 0.2);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    ul { padding-left: 20px; }
+
+    li {
+      margin-bottom: 10px;
+      position: relative;
+      animation: slideIn 1s ease;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-20px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .contact-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background: linear-gradient(90deg, #7c32ff, #b236c8);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      gap: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .contact-button:hover {
+      background: linear-gradient(90deg, #a050ff, #d459db);
+      transform: scale(1.03);
+      box-shadow: 0 0 10px #b236c8;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .partners {
+      background: #130c25;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      animation: fadeUp 1s ease-in-out;
+    }
+
+    .partners img {
+      width: 100px;
+      margin: 10px;
+      background: white;
+      padding: 5px;
+      border-radius: 5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .partners img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #b236c8;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: #888;
+      text-align: center;
+      margin-top: 20px;
+      animation: fadeInText 2s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="border-bottom: 2px solid #7c32ff; padding-bottom: 5px; font-weight: bold;">Reset password</div>
+    <h1>Відновимо доступ до вашого обладнання<br>Hikvision / Dahua</h1>
+    <p>
+      Ми — команда технічних спеціалістів, яка професійно займається обслуговуванням обладнання Hikvision та Dahua: 
+      відеореєстраторів, IP-камер, домофонів, сигналізацій, викличних панелей та іншої техніки. Наша спеціалізація — скидання 
+      паролів, відновлення доступу, прошивка, відв’язка від сервісів (Hik-Connect)
+    </p>
+    <a href="#section"><button class="btn">Зв'язатись</button></a>
+  </header>
+
+  <div class="section">
+    <h2>Наші переваги</h2>
+    <ul>
+      <li>Скидання за 5–15 хвилин</li>
+      <li>Без QR-коду та перепайки (у більшості випадків)</li>
+      <li>Можливість відправити пристрій Новою Поштою</li>
+      <li>Працюємо з усіма версіями прошивок</li>
+      <li>Відкрита комунікація — все пояснимо простою мовою</li>
+      <li>Знижки постійним клієнтам</li>
+    </ul>
+  </div>
+
+  <div class="section" id="section">
+    <h2>Наші контакти</h2>
+    <div class="contacts">
+      <a class="contact-button" href="https://t.me/HikVisionReset" target="_blank">
+        <img src="telegram.png" alt="Telegram" class="icon"> Telegram
+      </a>
+      <a class="contact-button" href="viber://chat?number=%2B380955907769" target="_blank">
+        <img src="viber.png" alt="Viber" class="icon"> Viber
+      </a>
+      <a class="contact-button" href="mailto:hikvisionreset@example.com">
+        <img src="email.png" alt="Email" class="icon"> Email
+      </a>
+      <a class="contact-button" href="tel:+380955907769">
+        📞 Зателефонувати
+      </a>
+    </div>
+  </div>
+
+  <div class="partners">
+    <h2>Наші партнери</h2>
+    <a href="https://www.hikvision.com" target="_blank">
+      <img height="60px" src="Hikvision-Logo.wine.svg" alt="Hikvision">
+    </a>
+    <a href="https://www.dahuatech.com" target="_blank">
+      <img height="60px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Dahua_Technology_logo.jpg/1200px-Dahua_Technology_logo.jpg" alt="Dahua">
+    </a>
+  </div>
+
+  <footer>
+    © Усі права захищені. HikVision Reset, 2024–2025.<br>
+    Розроблено <a href="https://t.me/HikVisionReset" target="_blank" style="color:#7c32ff; text-decoration: none;">t.me/HikVisionReset</a>
+  </footer>
+</body>
+</html>
